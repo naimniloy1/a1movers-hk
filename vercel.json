@@ -1,5 +1,6 @@
 {
-  "outputDirectory": ".vercel/output/static",
+  "buildCommand": "npm run build -- --root client",
+  "outputDirectory": "dist/public",
   "rewrites": [
     {
       "source": "/(.*)",
