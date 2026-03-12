@@ -1,5 +1,9 @@
 {
-  "outputDirectory": "client/dist",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
+  "env": {
+    "VITE_ROOT": "client"
+  },
   "rewrites": [
     {
       "source": "/(.*)",
