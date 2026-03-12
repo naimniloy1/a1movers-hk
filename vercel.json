@@ -1,0 +1,13 @@
+{
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm dev",
+  "framework": "react",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
