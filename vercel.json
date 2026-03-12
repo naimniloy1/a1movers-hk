@@ -1,5 +1,4 @@
 {
-  "buildCommand": "npm run build -- --root client",
   "outputDirectory": "dist/public",
   "rewrites": [
     {
