@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 import { fileURLToPath } from "url";
 import path from "path";
 
-// This helps Vite understand folder paths in a Linux (Vercel) environment
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -15,14 +14,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      // Maps @/components/ui/sonner to /client/sonner.tsx (based on your screenshot)
-      "@/components/ui": path.resolve(__dirname, "./client"),
-      // General alias for the rest of the project
-      "@": path.resolve(__dirname, "./client"),
+      // This maps "@/" directly to your "client/src" folder
+      "@": path.resolve(__dirname, "./client/src"),
     },
   },
-  build: {
-    // This ensures that if the build fails, we get more descriptive error logs
-    sourcemap: true,
-  }
 });
